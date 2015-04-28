@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "../src/terr.h"
 #include "terr_test.h"
 #define TERR_TEST_SIZE 100
