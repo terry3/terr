@@ -4,7 +4,7 @@
 
 
 #define TERR_EXPECT(s)                          \
-    if ((s) != E_TERR_RET_SUCCESS)              \
+    if ((s) != 0)                               \
     {                                           \
         printf("Terr error src[%d], line[%d]", (s), __LINE__); \
     }

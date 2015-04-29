@@ -1,22 +1,22 @@
 #include <stdio.h>
-#include "../src/terr.h"
+#include "../include/terrinc.h"
 #include "terr_test.h"
 #define TERR_TEST_SIZE 100
 
-T_UINT32 terr_test_1()
+unsigned int terr_test_1()
 {
-    T_UINT32 ul_index;
+    unsigned int ul_index;
     for (ul_index = 0; ul_index < TERR_TEST_SIZE; ul_index++)
     {
         TERR_STAT();
     }
 
-    M_RET_S();
+    return 0;
 }
 
 int main(int argc, char *argv[])
 {
-    T_UINT32     ul_ret;
+    unsigned int     ul_ret;
     ul_ret = terr_init();
     TERR_EXPECT(ul_ret);
     TERR_STAT();
