@@ -30,8 +30,7 @@ unsigned int terr_test_1()
 int main(int argc, char *argv[])
 {
     unsigned int     ul_ret;
-    ul_ret = terr_init();
-    TERR_EXPECT(ul_ret);
+    terr_init();
     TERR_STAT();
     terr_test_1();
 
