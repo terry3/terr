@@ -11,5 +11,7 @@ extern unsigned int terr_stat
 );
 
 extern unsigned int terr_dump();
+extern unsigned int terr_init();
+
 
 #endif /* TERRINC_H */
